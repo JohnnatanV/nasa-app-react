@@ -6,7 +6,6 @@ import SideBar from "./components/SideBar";
 function App() {
   //  const NASA_KEY = import.meta.env.VITE_NASA_API_KEY;
   const [data, setData] = useState(null);
-  const [loading, setLoading] = useState(false);
   const [showModal, setShowModal] = useState(false);
 
   const handleToggleModal = () => {
