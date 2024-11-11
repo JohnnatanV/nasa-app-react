@@ -7,9 +7,10 @@ const SideBar = (props) => {
       <div onClick={handleToggleModal} className="bgOverlay"></div>
       <div className="sidebarContents">
         <h2>{data?.title}</h2>
-        <div>
-          <p>{data?.date}</p>
-          <p>{data?.explanation}</p>
+        <div className="descriptionContainer">
+          <p className="descriptionTitle">Description</p>
+          <p className="explanation">{data?.explanation}</p>
+          <span className="dateText">{data?.date}</span>
         </div>
         <button onClick={handleToggleModal}>
           <i className="fa-solid fa-arrow-right"></i>
